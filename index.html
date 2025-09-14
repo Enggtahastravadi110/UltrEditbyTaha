@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exersize 7</title>
+    <style>
+        .main{
+            width: 80vw;
+            display: inline-flex;
+            margin-left: 10vw;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .S{
+            align-self: flex-end;
+        }
+        .container{
+            width: 80vw;
+            height: 80vh;
+            display: grid;
+            /* display: var(--display); */
+            grid-template-rows: repeat(4,1fr);
+            grid-template-columns: repeat(3,1fr);
+            margin: auto;
+            row-gap: 5px;
+            column-gap: 5px;
+        }
+        .a{
+            display: grid;
+            grid-template-areas: "lang lang"
+                                "one two";
+            justify-items: center;
+            background-color: bisque;
+            border-radius: 10px;
+        }
+        .a1{
+            grid-area: lang;
+        }
+        .a2{
+            border: 2px solid black;
+            width: 150px;
+            height: 30px;
+            text-align: center;
+            align-content: center;
+            border-radius: 10px;
+            /* grid-row: 2/2;
+            grid-column: 1/1; */
+            /* grid-area: one; */
+            background-color: aqua;
+        }
+        .a3{
+            border: 2px solid black;
+            width: 150px;
+            height: 30px;
+            text-align: center;
+            align-content: center;
+            border-radius: 10px;
+            /* grid-row: 2/2;
+            grid-column: 2/2; */
+            /* grid-area: two; */
+            background-color: rgb(59, 226, 59);
+        }
+        .b{
+            display: grid;
+            grid-template-areas: "lang lang"
+                                "one two";
+            justify-items: center;
+            background-color: bisque;
+            border-radius: 10px;
+        }
+        .a4{
+            grid-area: lang;
+        }
+        .a5{
+            border: 2px solid black;
+            width: 150px;
+            height: 30px;
+            text-align: center;
+            align-content: center;
+            border-radius: 10px;
+            grid-row: 2/2;
+            grid-column: 1/1;
+            background-color: aqua;
+        }
+        .a6{
+            border: 2px solid black;
+            width: 150px;
+            height: 30px;
+            text-align: center;
+            align-content: center;
+            border-radius: 10px;
+            grid-row: 2/2;
+            grid-column: 2/2;
+            background-color: rgb(59, 226, 59);
+        }
+        .c{
+            display: grid;
+            grid-template-areas: "lang lang"
+                                "one two";
+            justify-items: center;
+            background-color: bisque;
+            border-radius: 10px;
+        }
+        .a7{
+            grid-area: lang;
+        }
+        .a8{
+            border: 2px solid black;
+            width: 150px;
+            height: 30px;
+            text-align: center;
+            align-content: center;
+            border-radius: 10px;
+            grid-row: 2/2;
+            grid-column: 1/1;
+            background-color: aqua;
+        }
+        .a9{
+            border: 2px solid black;
+            width: 150px;
+            height: 30px;
+            text-align: center;
+            align-content: center;
+            border-radius: 10px;
+            grid-row: 2/2;
+            grid-column: 2/2;
+            background-color: rgb(59, 226, 59);
+        }
+        .d{
+            display: grid;
+            grid-template-areas: "lang lang"
+                                "one two";
+            justify-items: center;
+            background-color: bisque;
+            border-radius: 10px;
+        }
+        .a10{
+            grid-area: lang;
+        }
+        .a11{
+            border: 2px solid black;
+            width: 150px;
+            height: 30px;
+            text-align: center;
+            align-content: center;
+            border-radius: 10px;
+            grid-row: 2/2;
+            grid-column: 1/1;
+            background-color: aqua;
+        }
+        .a12{
+            border: 2px solid black;
+            width: 150px;
+            height: 30px;
+            text-align: center;
+            align-content: center;
+            border-radius: 10px;
+            grid-row: 2/2;
+            grid-column: 2/2;
+            background-color: rgb(59, 226, 59);
+        }
+        .e{
+            display: grid;
+            grid-template-areas: "lang lang"
+                                "one two";
+            justify-items: center;
+            background-color: bisque;
+            border-radius: 10px;
+        }
+        .a13{
+            grid-area: lang;
+        }
+        .a14{
+            border: 2px solid black;
+            width: 150px;
+            height: 30px;
+            text-align: center;
+            align-content: center;
+            border-radius: 10px;
+            grid-row: 2/2;
+            grid-column: 1/1;
+            background-color: aqua;
+        }
+        .a15{
+            border: 2px solid black;
+            width: 150px;
+            height: 30px;
+            text-align: center;
+            align-content: center;
+            border-radius: 10px;
+            grid-row: 2/2;
+            grid-column: 2/2;
+            background-color: rgb(59, 226, 59);
+        }
+        .f{
+            display: grid;
+            grid-template-areas: "lang lang"
+                                "one two";
+            justify-items: center;
+            background-color: bisque;
+            border-radius: 10px;
+        }
+        .a16{
+            grid-area: lang;
+        }
+        .a17{
+            border: 2px solid black;
+            width: 150px;
+            height: 30px;
+            text-align: center;
+            align-content: center;
+            border-radius: 10px;
+            grid-row: 2/2;
+            grid-column: 1/1;
+            background-color: aqua;
+        }
+        .a18{
+            border: 2px solid black;
+            width: 150px;
+            height: 30px;
+            text-align: center;
+            align-content: center;
+            border-radius: 10px;
+            grid-row: 2/2;
+            grid-column: 2/2;
+            background-color: rgb(59, 226, 59);
+        }
+        .g{
+            display: grid;
+            grid-template-areas: "lang lang"
+                                "one two";
+            justify-items: center;
+            background-color: bisque;
+            border-radius: 10px;
+        }
+        .a19{
+            grid-area: lang;
+        }
+        .a20{
+            border: 2px solid black;
+            width: 150px;
+            height: 30px;
+            text-align: center;
+            align-content: center;
+            border-radius: 10px;
+            grid-row: 2/2;
+            grid-column: 1/1;
+            background-color: aqua;
+        }
+        .a21{
+            border: 2px solid black;
+            width: 150px;
+            height: 30px;
+            text-align: center;
+            align-content: center;
+            border-radius: 10px;
+            grid-row: 2/2;
+            grid-column: 2/2;
+            background-color: rgb(59, 226, 59);
+        }
+        .h{
+            display: grid;
+            grid-template-areas: "lang lang"
+                                "one two";
+            justify-items: center;
+            background-color: bisque;
+            border-radius: 10px;
+        }
+        .a22{
+            grid-area: lang;
+        }
+        .a23{
+            border: 2px solid black;
+            width: 150px;
+            height: 30px;
+            text-align: center;
+            align-content: center;
+            border-radius: 10px;
+            grid-row: 2/2;
+            grid-column: 1/1;
+            background-color: aqua;
+        }
+        .a24{
+            border: 2px solid black;
+            width: 150px;
+            height: 30px;
+            text-align: center;
+            align-content: center;
+            border-radius: 10px;
+            grid-row: 2/2;
+            grid-column: 2/2;
+            background-color: rgb(59, 226, 59);
+        }
+        .i{
+            display: grid;
+            grid-template-areas: "lang lang"
+                                "one two";
+            justify-items: center;
+            background-color: bisque;
+            border-radius: 10px;
+        }
+        .a25{
+            grid-area: lang;
+        }
+        .a26{
+            border: 2px solid black;
+            width: 150px;
+            height: 30px;
+            text-align: center;
+            align-content: center;
+            border-radius: 10px;
+            grid-row: 2/2;
+            grid-column: 1/1;
+            background-color: aqua;
+        }
+        .a27{
+            border: 2px solid black;
+            width: 150px;
+            height: 30px;
+            text-align: center;
+            align-content: center;
+            border-radius: 10px;
+            grid-row: 2/2;
+            grid-column: 2/2;
+            background-color: rgb(59, 226, 59);
+        }
+        .j{
+            display: grid;
+            grid-template-areas: "lang lang"
+                                "one two";
+            justify-items: center;
+            background-color: bisque;
+            border-radius: 10px;
+            
+        }
+        .a28{
+            grid-area: lang;
+        }
+        .a29{
+            border: 2px solid black;
+            width: 150px;
+            height: 30px;
+            text-align: center;
+            align-content: center;
+            border-radius: 10px;
+            grid-row: 2/2;
+            grid-column: 1/1;
+            background-color: aqua;
+        }
+        .a30{
+            border: 2px solid black;
+            width: 150px;
+            height: 30px;
+            text-align: center;
+            align-content: center;
+            border-radius: 10px;
+            background-color: rgb(59, 226, 59);
+        }
+        .k{
+            display: grid;
+            /* grid-template-areas: "lang lang"
+                                "one one"; */
+            justify-items: center;
+            align-items: center;
+            background-color: bisque;
+            border-radius: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <img src="ue.png" alt="">
+        <h2>Download UltraEdit</h2>
+        <p class="S">v2023.1(released 08/16/2023 | Hotfix)</p>
+    </div>
+    <div class="container">
+        <div class="a">
+            <div class="a1"><h2>English</h2></div>
+            <div class="a2"><a href="ue_english_64.exe">Download 32-bit</a></div>
+            <div class="a3"><a href="ue_english_64.exe">Download 32-bit</a></div>
+        </div>
+        <div class="b">
+            <div class="a4"><h2>Deutsch</h2></div>
+            <div class="a5"><a href="ue_english_64.exe">Download 32-bit</a></div>
+            <div class="a6"><a href="ue_english_64.exe">Download 32-bit</a></div>
+        </div>
+        <div class="c">
+            <div class="a7"><h2>Italiano</h2></div>
+            <div class="a8"><a href="ue_english_64.exe">Download 32-bit</a></div>
+            <div class="a9"><a href="ue_english_64.exe<a href="ue_english_64.exe">Download 32-bit</a>it</a></div>
+        </div>
+        <div class="d">
+            <div class="a10"><h2>español</h2></div>
+            <div class="a11"><a href="ue_english_64.exe">Download 32-bit</a></div>
+            <div class="a12"><a href="ue_english_64.exe">Download 32-bit</a></div>
+        </div>
+        <div class="e">
+            <div class="a13"><h2>francés</h2></div>
+            <div class="a14"><a href="ue_english_64.exe">Download 32-bit</a></div>
+            <div class="a15"><a href="ue_english_64.exe">Download 32-bit</a></div>
+        </div>
+        <div class="f">
+            <div class="a16"><h2>português brasileiro</h2></div>
+            <div class="a17"><a href="ue_english_64.exe">Download 32-bit</a></div>
+            <div class="a18"><a href="ue_english_64.exe">Download 32-bit</a></div>
+        </div>
+        <div class="g">
+            <div class="a19"><h2>日本</h2></div>
+            <div class="a20"><a href="ue_english_64.exe">Download 32-bit</a></div>
+            <div class="a21"><a href="ue_english_64.exe">Download 32-bit</a></div>
+        </div>
+        <div class="h">
+            <div class="a22"><h2>한국어</h2></div>
+            <div class="a23"><a href="ue_english_64.exe">Download 32-bit</a></div>
+            <div class="a24"><a href="ue_english_64.exe">Download 32-bit</a></div>
+        </div>
+        <div class="i">
+            <div class="a25"><h2>华语</h2></div>
+            <div class="a26"><a href="ue_english_64.exe">Download 32-bit</a></div>
+            <div class="a27"><a href="ue_english_64.exe">Download 32-bit</a></div>
+        </div>
+        <div class="j">
+            <div class="a28"><h2>华语</h2></div>
+            <div class="a29"><a href="ue_english_64.exe">Download 32-bit</a></div>
+            <div class="a30"><a href="ue_english_64.exe">Download 32-bit</a></div>
+        </div>
+        <button class="k"><h1>Pay Now</h1></button>
+        <script>
+            
+        </script>
+    </div>
+</body>
+</html>
